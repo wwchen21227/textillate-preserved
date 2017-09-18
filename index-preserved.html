@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textillate-preserved.js</title>
+  <link href="assets/animate.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+  <style>
+   [class*="word-wrapper"] {
+            display: block;
+            position: relative;
+            -webkit-flex: none;
+            -ms-flex: none;
+            flex: none;
+            white-space: pre;
+        }
+		b, i{
+			color:#fff;
+		}
+  </style>
+  <body>
+    <div class="decal"></div>
+		<div class="jumbotron">
+			<div class="container">
+  		  <h1 class="glow in tlt">textillate.js</h1>
+  		  <p class="tlt" data-in-effect="bounceInDown">
+  		  	A <b>simple</b> plugin for <i>CSS3</i> text <u>animations</u>.
+  		  </p>
+        <div>
+        </div>
+       
+  		</div>
+  	</div>
+    <div class="decal"></div>
+  
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<script src="assets/charming-word-wrap.js"></script>
+<script src="jquery.textillate.preserved.js"></script>
+
+<script>
+  $(function (){
+
+    $('.jumbotron h1')
+      .textillate({ in: { effect: 'flipInY' }});
+
+    $('.jumbotron p')
+      .textillate({ initialDelay: 1000, in: { delay: 3, shuffle: true } });
+
+
+  });
+
+	</script>
+  <script>
+    window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+  </script>
+  </body>
+</html>
