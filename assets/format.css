@@ -1,0 +1,8 @@
+ [class*="word-wrapper"] {
+            display: block;
+            position: relative;
+            -webkit-flex: none;
+            -ms-flex: none;
+            flex: none;
+            white-space: pre;
+        }
